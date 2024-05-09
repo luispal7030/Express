@@ -7,20 +7,37 @@
     <title>Login</title>
 </head>
 <body>
-    <!-- https://youtu.be/-bI0diefasA?si=CLI4jedKpO0Fl2DT -->
-    <a href="./src/html/inicio.html">pagina de inicio</a>
-
     <div id="formulario">
         <p>INICIAR SESION</p>
         <form action="GET" >
-            <label for="usuario">usuario</label>
-            <input type="text" name="usuario" id="">
-            <label for="contraseña">contraseña</label>
-            <input type="text" name="contraseña" id="">
+            <div class="targetinputs">
+                <div>
+                    <label for="usuario">usuario</label>
+                    <input type="text" name="usuario" id="">    
+                </div>            
+                <div>
+                    <label for="contraseña">Contraseña</label>
+                    <input type="text" name="contraseña" id="">
+                </div>
 
-            <input type="submit" value="Validar">
-            <input type="checkbox" name="recordar" id="">
+            </div>
+            <div class="targetinputs">
+                <label for="perfil">Perfil de Trabajo</label>
+                <select name="perfil" id="">
+                    <option value="Torque">TORQUE-G46</option>
+                    <option value="Irontools">IRONTOOLS</option>
+                    <option value="Herraper">HERRAPER E&M</option>
 
+                </select>
+            </div>
+            <div>
+                <input id="validar" type="submit" value="Validar">
+                <div class="loginrecordar">
+                    <input type="checkbox" name="recordar" id="">   
+                    <label for="recordar">Recordar sesion</label>
+                </div>
+            </div>
+            <a href="./src/html/inicio.html">pagina de inicio</a>
 
         </form>
     </div>

@@ -1,23 +1,89 @@
 body{
     height: 100%;
     width: 100vw;
-    background-color: #f3f3fb;
-    background-image:  linear-gradient(30deg, #dcffdc 12%, transparent 12.5%, transparent 87%, #dcffdc 87.5%, #dcffdc), linear-gradient(150deg, #dcffdc 12%, transparent 12.5%, transparent 87%, #dcffdc 87.5%, #dcffdc), linear-gradient(30deg, #dcffdc 12%, transparent 12.5%, transparent 87%, #dcffdc 87.5%, #dcffdc), linear-gradient(150deg, #dcffdc 12%, transparent 12.5%, transparent 87%, #dcffdc 87.5%, #dcffdc), linear-gradient(60deg, #dcffdc77 25%, transparent 25.5%, transparent 75%, #dcffdc77 75%, #dcffdc77), linear-gradient(60deg, #dcffdc77 25%, transparent 25.5%, transparent 75%, #dcffdc77 75%, #dcffdc77);
-    background-size: 30px 53px;
-    background-position: 0 0, 0 0, 15px 26px, 15px 26px, 0 0, 15px 26px;
-
+    background-color: #bbc5c2;
+    opacity: 0.8;
+    background-image:  linear-gradient(30deg, #fcfcfc 12%, transparent 12.5%, transparent 87%, #fcfcfc 87.5%, #fcfcfc), linear-gradient(150deg, #fcfcfc 12%, transparent 12.5%, transparent 87%, #fcfcfc 87.5%, #fcfcfc), linear-gradient(30deg, #fcfcfc 12%, transparent 12.5%, transparent 87%, #fcfcfc 87.5%, #fcfcfc), linear-gradient(150deg, #fcfcfc 12%, transparent 12.5%, transparent 87%, #fcfcfc 87.5%, #fcfcfc), linear-gradient(60deg, #fcfcfc77 25%, transparent 25.5%, transparent 75%, #fcfcfc77 75%, #fcfcfc77), linear-gradient(60deg, #fcfcfc77 25%, transparent 25.5%, transparent 75%, #fcfcfc77 75%, #fcfcfc77);
+    background-size: 38px 67px;
+    background-position: 0 0, 0 0, 19px 33px, 19px 33px, 0 0, 19px 33px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 #formulario{
     height: 400px;
     width: 350px;
-    border-radius: 8px;
+    border-radius: 15px;
     background-color: #fdfdfd;
+    border: 2px solid  rgb(121, 204, 200);
+
+    padding: 15px;
+}
+
+input, select{
+    height: 22px;
+    margin: 0 8px;
+}
+
+input{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(121, 204, 200);
+}
+
+#formulario p{
+
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+form{
+    height: 90%;
+    width: 100%;
+    gap: 5px;
+
+}
+
+form div, form, #formulario{
     display: flex;
     flex-direction: column;
-    padding: 5px;
+}
+
+
+form label{
+    padding: 0 10px;
+    height: 25px;
+    margin-top: 10px;
+}
+
+select{
+    height: 30px;
+
+}
+
+.targetinputs
+{
+    flex: 1;
+}
+
+.loginrecordar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#validar{
+    border-radius: 8px;
+    height: 34px;
+}
+
+#validar:hover{
+    cursor: pointer;
+    box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.5);
+
 }
