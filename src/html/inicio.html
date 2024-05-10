@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -118,12 +118,12 @@
         </div>
         
         <div class="body">
-            <div class="txtTittle">
-                <p class="paddistance ">Cotizaciones</p>
+            <div class="paddistance txtTittle">
+                <p class=" ">Cotizaciones</p>
                 <ul>
-                    <li><ion-icon name="newspaper-outline"></ion-icon></li>
-                    <li><ion-icon name="notifications-outline"></ion-icon></li>
-                    <li><ion-icon name="person-outline"></ion-icon></li>
+                    <li><ion-icon class="isize" name="newspaper-outline"></ion-icon></li>
+                    <li><ion-icon class="isize" name="notifications-outline"></ion-icon></li>
+                    <li><ion-icon class="isize" name="person-outline"></ion-icon></li>
                 </ul>
             </div>
             <div>
@@ -186,43 +186,48 @@
                         <div class="bannerResume">
                             <div class="flexStats">
                                 <div>
-                                    <p class="txtcolorgray">Monto Dolares</p>
+                                    <p class="txtcolorgraydark">Monto Dolares</p>
                                     <p>00.00 $</p>
                                 </div>
                                 <div>
-                                    <p class="txtcolorgray">Monto Soles</p>
+                                    <p class="txtcolorgraydark">Monto Soles</p>
                                     <p>00.00 $</p>
                                 </div>
                             </div>
                             <div class="flexStats">
                                 <div>
-                                    <p class="txtcolorgray">Base A</p>
+                                    <p class="txtcolorgraydark">Base A</p>
                                     <p>00.00 $</p>
                                 </div>
                                 <div>
-                                    <p class="txtcolorgray">Total</p>
+                                    <p class="txtcolorgraydark">Total</p>
                                     <p>00.00 $</p>
                                 </div>
                             </div>
                         
-                        <div class="flexStats">
-                            <div class="generalStats">
-                                <div>
+                            
+                        <div class="general">
+                            <div id="generalStats">
+                                <!--  -->
+                                <div class="unidStats">                              <div>
                                     <p class="txtcolorgray">Ventas</p>
                                     <p>00.00 $</p>
                                 </div>
-                                <div>
+                                <!--  -->
+                                <div class="unidStats">
                                     <p class="txtcolorgray">Compras</p>
                                     <p>00.00 $</p>
                                 </div>
-                                <div>
+                                <!--  -->
+                                <div class="unidStats">
                                     <p class="txtcolorgray">Pendiente</p>
                                     <p>00.00 $</p>
                                 </div>
                             </div>
-                            <div>
+                           <div class="bars">
+                                a
                             </div>
-                            </div>
+                            
                         </div>
                     </div>
                 <!-- !! -->
@@ -236,7 +241,7 @@
                     <div>
                         <div><img src="" alt=""></div>
                         <div><img src="" alt=""></div>
-                        <div><a id="addcotizacion">Nueva Cotizacion</a></div>
+                        <div><a id="addcotizacion" href="#">Nueva Cotizacion</a></div>
                     </div>
                 </div>
                 <div>
@@ -253,19 +258,25 @@
                             <th>Total</th>
                             <th></th>
                         </tr>
-                        <tr>
-                            <td><input type="checkbox" name="" id=""></td>
-                            <td><p id="status" class="bgpagado" style="font-size: 12px;">PAGADO</p></td>
-                            <td> <ion-icon class="txtcolorgraydark" name="attach-outline"></ion-icon> </td>
-                            <td><p>T22400-07</p></td>
-                            <td><p>Ferreco</p></td>
-                            <td><p>20254819256</p></td>
-                            <td><p>07/05/2024 13:39</p></td>
-                            <td><p>TORQUE</p></td>
-                            <td><p>120</p></td>
-                            <td><ion-icon name="ellipsis-vertical-outline"></ion-icon></td>
-                        </tr>
+                        <div id="registros">
+                            <tr>
+                                <td><input type="checkbox" name="" id=""></td>
+                                <td><p id="status" class="bgpagado" style="font-size: 12px;">PAGADO</p></td>
+                                <td> <ion-icon class="txtcolorgraydark" name="attach-outline"></ion-icon> </td>
+                                <td><p>T22400-07</p></td>
+                                <td><p>Ferreco</p></td>
+                                <td><p>20254819256</p></td>
+                                <td><p>07/05/2024 13:39</p></td>
+                                <td><p>TORQUE</p></td>
+                                <td><p>120</p></td>
+                                <td><ion-icon name="ellipsis-vertical-outline"></ion-icon></td>
+                            </tr>
+                        </div>
+
+                        
                     </table>
+
+                    <div class="popupresponse">sugest</div>
                 </div>
             </div>
         </div>
