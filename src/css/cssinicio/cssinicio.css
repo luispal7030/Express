@@ -343,9 +343,9 @@ td{
 .flexStats{
   flex: 1;
   padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  /* display: flex; */
+  /* flex-direction: column;
+  justify-content: space-around; */
 }
 .flexStats:nth-child(2){
 
@@ -383,9 +383,19 @@ td{
   display: inline-flex;
 }
 .general{
+  width: 100%;
+  background: olivedrab;
   flex: 2;
   display: flex;
   flex-direction: column;
+}
+
+.generalStats
+{
+  width: 500px;
+  background: lightcoral;
+  display: flex;
+  flex-direction: row;
 }
 
 .unidStats{
