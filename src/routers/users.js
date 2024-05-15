@@ -9,4 +9,5 @@ router.get('/users/signup', (req, res) => {
     res.render('users/signup');
 })
 
+console.log("jo");
 module.exports = router;
