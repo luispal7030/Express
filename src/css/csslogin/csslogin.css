@@ -1,6 +1,6 @@
 body{
-    height: 100%;
-    width: 100vw;
+    height: 100vh;
+    width: 100%;
     background-color: #bbc5c2;
     opacity: 0.8;
     background-image:  linear-gradient(30deg, #fcfcfc 12%, transparent 12.5%, transparent 87%, #fcfcfc 87.5%, #fcfcfc), linear-gradient(150deg, #fcfcfc 12%, transparent 12.5%, transparent 87%, #fcfcfc 87.5%, #fcfcfc), linear-gradient(30deg, #fcfcfc 12%, transparent 12.5%, transparent 87%, #fcfcfc 87.5%, #fcfcfc), linear-gradient(150deg, #fcfcfc 12%, transparent 12.5%, transparent 87%, #fcfcfc 87.5%, #fcfcfc), linear-gradient(60deg, #fcfcfc77 25%, transparent 25.5%, transparent 75%, #fcfcfc77 75%, #fcfcfc77), linear-gradient(60deg, #fcfcfc77 25%, transparent 25.5%, transparent 75%, #fcfcfc77 75%, #fcfcfc77);
@@ -9,8 +9,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    overflow-x: hidden;
 
 }
 
@@ -87,4 +85,13 @@ select{
     cursor: pointer;
     box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.5);
 
+}
+
+
+.tagitem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
 }

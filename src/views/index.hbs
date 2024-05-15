@@ -1,7 +1,56 @@
-<div class="jumbotron mt-4">
-    <h1 class="display-4">NODEJS APP MONGOBD</h1>
-    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-    <hr class="my-4">
-    <p>Lorem ipsum dolor, sit amet consecte adipisicing elit. Numquam, voluptatibus.</p>
-    <a href="#" class="btn btn-primary btn-lg">click</a>
-</div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/csslogin/csslogin.css">
+    <title>Login</title>
+</head>
+<body>
+    <div id="formulario">
+        <p>INICIAR SESION</p>
+        <form action="GET" >
+            <div class="targetinputs">
+                <div>
+                    <div class="tagitem">
+                        <label for="usuario">Usuario</label>
+                        <ion-icon name="person-outline"></ion-icon>
+                    </div>
+                    <input type="text" name="usuario" id="">    
+                </div>            
+                <div>
+                    <div class="tagitem">
+                        <label for="contraseña">Contraseña</label>
+                        <ion-icon name="key-outline"></ion-icon>
+                    </div>
+                    <input type="text" name="contraseña" id="">
+                </div>
+
+            </div>
+            <div class="targetinputs">
+                <label for="perfil">Perfil de Trabajo</label>
+                <select name="perfil" id="">
+                    <option value="Torque">TORQUE-G46</option>
+                    <option value="Irontools">IRONTOOLS</option>
+                    <option value="Herraper">HERRAPER E&M</option>
+
+                </select>
+            </div>
+            <div>
+                <input id="validar" type="submit" value="Validar">
+                <div class="loginrecordar">
+                    <input type="checkbox" name="recordar" id="">   
+                    <label for="recordar">Recordar sesion</label>
+                </div>
+            </div>
+            <a href="./src/html/inicio.html">pagina de inicio</a>
+
+        </form>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
