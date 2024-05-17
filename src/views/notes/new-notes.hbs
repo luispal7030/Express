@@ -1,19 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/cssquote/cssquotes.css" />
-    <link rel="stylesheet" href="../css/normalize.css" />
-    <title>quot</title>
-  </head>
-  <body>
+{{#each errors}}
+  <div class="class">
+    <p>1 error</p>
+  </div>
+{{/each}}
+
+<link rel="stylesheet" href="/css/newqunote.css">
+
+<div id="quot-notes">
     <div class="boxaddProduct">
-      <form action="/notes/new-note">
+      <form action="/notes/new-note" method="post">
         <!-- agregar un producto a la cotizacion -->
         <div class="addproduct">
           <div class="target">
-            <input name="producto" type="text" autofocus />
+            <input name="producto" type="text" />
             <label for="producto">Agregar un producto a la cotizacion</label>
           </div>
           <div class="target">
@@ -39,8 +38,10 @@
           <p class="nameEnterprise">Torque-G46</p>
           <div class="addrescity">
             <p>RUC : 20601395801</p>
-            <p>Direccion:</p>
-            <p>Natalio Sanches Nro° 244 Dpto 304 Jesus Maria - Lima</p>
+            <P>Direccion:</P>
+            <p>Natalio Sanches Nro° 244 
+                Dpto 304 Jesus Maria - Lima</p>
+            
           </div>
         </div>
         <div class="infoQuot">
@@ -85,11 +86,11 @@
             <p>Condicion Oferta</p>
             <div>
               <p>Tipo de moneda:</p>
-
-              <select name="moneda" id="moneda">
+              
+                <select name="moneda" id="moneda">
                 <option value="USD_DOLAR">DOLAR</option>
                 <option value="PEN_SOL">SOLES</option>
-              </select>
+                </select>
             </div>
             <div>
               <p>Condicion de Pago:</p>
@@ -100,10 +101,7 @@
       </div>
       <div>
         <table border="1" class="pricetable">
-          <p class="tablelegend">
-            Permita la presente hacerle llegar nuestro cordial saludo y
-            detallamos a Ud. Lo siguiente:
-          </p>
+            <p class="tablelegend">Permita la presente hacerle llegar nuestro cordial saludo y detallamos a Ud. Lo siguiente: </p>
           <tr>
             <th>N° ITEM</th>
             <th>DESCRIPCION</th>
@@ -122,43 +120,31 @@
       </div>
       <div class="description">
         <div class="infowaigth">
-          <p>Total Peso:</p>
-          <p>00 Kg</p>
+            <p>Total Peso:</p>
+            <p>00 Kg</p>
         </div>
         <div class="prices">
-          <div>
-            <p>Total sin IGV :</p>
-            <p>00.00</p>
-          </div>
-          <div>
-            <p>IGV 18% :</p>
-            <p>00.00</p>
-          </div>
-          <div>
-            <p>Importe Total :</p>
-            <p>00.00</p>
-          </div>
+            <div>
+                <p>Total sin IGV :</p>
+                <p>00.00</p>
+            </div>
+            <div>
+                <p>IGV 18% :</p>
+                <p>00.00</p>
+            </div>
+            <div>
+                <p>Importe Total :</p>
+                <p>00.00</p>
+            </div>
         </div>
       </div>
     </div>
 
     <div class="boxoptions">
       <div class="btnboxoptions">
-        <button class="btnbox">
-          Descargar <ion-icon name="image-outline"></ion-icon>
-        </button>
+        <button class="btnbox">Descargar <ion-icon name="image-outline"></ion-icon></button>
         <button class="btnbox">Guardar</button>
         <button class="btnbox">Nueva Cotizacion</button>
       </div>
     </div>
-
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
-</html>
+</div>
