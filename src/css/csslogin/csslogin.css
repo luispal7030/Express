@@ -9,8 +9,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    overflow: hidden;
 
 }
 
@@ -89,7 +87,12 @@ select{
 
 }
 
-select{
-    height: 32px;
+
+.tagitem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
 }
 

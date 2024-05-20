@@ -1,0 +1,150 @@
+{{#each errors}}
+  <div class="class">
+    <p>1 error</p>
+  </div>
+{{/each}}
+
+<link rel="stylesheet" href="/css/newqunote.css">
+
+<div id="quot-notes">
+    <div class="boxaddProduct">
+      <form action="/notes/new-note" method="post">
+        <!-- agregar un producto a la cotizacion -->
+        <div class="addproduct">
+          <div class="target">
+            <input name="producto" type="text" />
+            <label for="producto">Agregar un producto a la cotizacion</label>
+          </div>
+          <div class="target">
+            <input name="cantidad" type="text" />
+            <label for="cantidad">Cantidad</label>
+          </div>
+          <!-- <div class="target">
+            <input name="Precio" type="text" />
+            <label for="Precio">Precio</label>
+          </div> -->
+          <div class="target">
+            <button class="btnbox" type="submit">
+              Agregar <ion-icon name="add-circle-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div>
+      <div>
+        <div class="infoSeller">
+          <p class="nameEnterprise">Torque-G46</p>
+          <div class="addrescity">
+            <p>RUC : 20601395801</p>
+            <P>Direccion:</P>
+            <p>Natalio Sanches Nro° 244 
+                Dpto 304 Jesus Maria - Lima</p>
+            
+          </div>
+        </div>
+        <div class="infoQuot">
+          <div class="numberQuot">
+            <p>Numero de cotizacion :</p>
+            <p>22430-15</p>
+          </div>
+          <div class="dateQuot">
+            <p>Fecha :</p>
+            <p>lorem</p>
+          </div>
+        </div>
+
+        <div class="informational">
+          <div class="infoCustomer">
+            <div>
+              <p>Cliente :</p>
+              <p>LoremIpsum</p>
+            </div>
+            <div>
+              <p>Direccion :</p>
+              <p>LoremIpsum</p>
+            </div>
+            <div>
+              <p>RUC :</p>
+              <p>LoremIpsum</p>
+            </div>
+            <div>
+              <p>Telefono :</p>
+              <p>LoremIpsum</p>
+            </div>
+            <div>
+              <p>Vendedor :</p>
+              <p>Luis Palomino</p>
+            </div>
+            <div>
+              <p>Direccion de Entrega :</p>
+              <p>Lorem</p>
+            </div>
+          </div>
+          <div class="offercondition">
+            <p>Condicion Oferta</p>
+            <div>
+              <p>Tipo de moneda:</p>
+              
+                <select name="moneda" id="moneda">
+                <option value="USD_DOLAR">DOLAR</option>
+                <option value="PEN_SOL">SOLES</option>
+                </select>
+            </div>
+            <div>
+              <p>Condicion de Pago:</p>
+              <p>Letra 90 Días</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <table border="1" class="pricetable">
+            <p class="tablelegend">Permita la presente hacerle llegar nuestro cordial saludo y detallamos a Ud. Lo siguiente: </p>
+          <tr>
+            <th>N° ITEM</th>
+            <th>DESCRIPCION</th>
+            <th>CANTIDAD</th>
+            <th>PRECIO UNITARIO</th>
+            <th>SUBTOTAL</th>
+          </tr>
+          <tr>
+            <td>Valor 1</td>
+            <td>Valor 2</td>
+            <td>Valor 3</td>
+            <td>Valor 4</td>
+            <td>Valor 5</td>
+          </tr>
+        </table>
+      </div>
+      <div class="description">
+        <div class="infowaigth">
+            <p>Total Peso:</p>
+            <p>00 Kg</p>
+        </div>
+        <div class="prices">
+            <div>
+                <p>Total sin IGV :</p>
+                <p>00.00</p>
+            </div>
+            <div>
+                <p>IGV 18% :</p>
+                <p>00.00</p>
+            </div>
+            <div>
+                <p>Importe Total :</p>
+                <p>00.00</p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="boxoptions">
+      <div class="btnboxoptions">
+        <button class="btnbox">Descargar <ion-icon name="image-outline"></ion-icon></button>
+        <button class="btnbox">Guardar</button>
+        <button class="btnbox">Nueva Cotizacion</button>
+      </div>
+    </div>
+</div>
