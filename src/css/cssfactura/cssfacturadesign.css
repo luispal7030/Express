@@ -155,3 +155,10 @@ lineas: rgb(113, 117, 124); gris bajo
   .dvResPrices div>p:nth-child(2){
     width: 120px;
   }
+
+  .textBold {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
