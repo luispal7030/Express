@@ -5,13 +5,13 @@ principal: #6e84e7  azul torque
 lineas: rgb(113, 117, 124); gris bajo
 */
 
-* {
+/* * {
     font-family: monospace;
-  }
-  
-  /* .frameFact {
-    padding: 10px;
   } */
+  
+  .frameFact {
+    padding: 10px;
+  }
   
   .boxinfo, .infoSeller, .dateQuot, .infoCustomer div {
     display: flex;
@@ -90,9 +90,13 @@ lineas: rgb(113, 117, 124); gris bajo
     font-weight: bolder;
   }
   
-  .tablelegend, .diseñotabla {
+  .tablelegend{
     padding: 2px 15px;
-    font-size: 1.1em;
+    font-size: 1 em;
+  }
+  .diseñotabla {
+    padding: 2px 15px;
+    font-size: 0.9 em;
   }
   
   .tblCotizaciones {
@@ -162,3 +166,23 @@ lineas: rgb(113, 117, 124); gris bajo
     font-size: 14px;
   }
 
+
+  .tbItem{
+    width: 10%; 
+  }
+
+  .tbDesc{
+    width: 60%;
+  }
+
+  .tbCant{
+    width: 10%;
+  }
+
+  .tbPrice{
+    width: 10%;
+  }
+
+  .tbTotal{
+    width: 10%;
+  }
