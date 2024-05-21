@@ -186,3 +186,131 @@ lineas: rgb(113, 117, 124); gris bajo
   .tbTotal{
     width: 10%;
   }
+
+
+
+  /* respp */
+  /* Estilos generales */
+body {
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos específicos para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .frameFact {
+      padding: 5px;
+  }
+
+  .boxinfo {
+      flex-direction: column;
+      padding: 10px 20px;
+  }
+
+  .infoSeller {
+      font-size: 14px;
+  }
+
+  .logofact {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto;
+  }
+
+  .infoQuot {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .dateQuot {
+      flex-direction: column;
+      padding: 5px;
+  }
+
+  .addrescity {
+      margin-left: 0;
+  }
+
+  .informational {
+      flex-direction: column;
+      padding: 5px;
+  }
+
+  .infoCustomer {
+      padding: 10px;
+  }
+
+  .tblCotizaciones th,
+  .tblCotizaciones td {
+      font-size: 0.9em;
+      padding: 5px;
+  }
+
+  .dvResPrices div {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 5px;
+  }
+
+  .dvResPrices div>p {
+      width: 100%;
+  }
+}
+
+/* Estilos específicos para pantallas medianas (tabletas) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .frameFact {
+      padding: 10px;
+  }
+
+  .boxinfo {
+      flex-direction: row;
+      padding: 15px 30px;
+  }
+
+  .infoSeller {
+      font-size: 15px;
+  }
+
+  .logofact {
+      width: 140px;
+      height: 140px;
+  }
+
+  .infoQuot {
+      width: 200px;
+  }
+
+  .dateQuot {
+      padding: 10px;
+  }
+
+  .addrescity {
+      margin-left: 30px;
+  }
+
+  .informational {
+      padding: 10px;
+  }
+
+  .infoCustomer {
+      padding: 15px;
+  }
+
+  .tblCotizaciones th,
+  .tblCotizaciones td {
+      font-size: 1em;
+      padding: 8px;
+  }
+
+  .dvResPrices div {
+      flex-direction: row;
+      align-items: center;
+  }
+
+  .dvResPrices div>p {
+      width: auto;
+      padding: 5px;
+  }
+}
