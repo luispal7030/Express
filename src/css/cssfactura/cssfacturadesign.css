@@ -1,0 +1,316 @@
+/* Path: src/css/cssfactura/cssfacturadesign.css */
+/* colores */
+/* 
+principal: #6e84e7  azul torque
+lineas: rgb(113, 117, 124); gris bajo
+*/
+
+/* * {
+    font-family: monospace;
+  } */
+  
+  .frameFact {
+    padding: 10px;
+  }
+  
+  .boxinfo, .infoSeller, .dateQuot, .infoCustomer div {
+    display: flex;
+  }
+  
+  .boxinfo {
+    flex-direction: row;
+    padding: 15px 60px;
+  }
+  
+  .infoSeller {
+    align-items: center;
+    font-size: 16px;
+    flex: 2;
+  }
+  
+  .logofact {
+    width: 160px;
+    height: 160px;
+  }
+  
+  .cuenta, .numberQuot p:nth-child(1), .tablelegend {
+    font-weight: bolder;
+    font-family: monospace;
+  }
+  
+  .infoQuot {
+    border: 1px solid #dee2f9;
+    width: 250px;
+    border-radius: 10px;
+  }
+  
+  .numberQuot p:nth-child(1) {
+    background: #6e84e7;;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: white;
+  }
+  
+  .dateQuot {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px solid rgb(113, 117, 124);
+  }
+  
+  .addrescity {
+    margin-left: 50px;
+  }
+  
+  .informational {
+    margin: 10px 0;
+    padding: 0 15px;
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .infoCustomer {
+    flex-direction: column;
+    border: 1px solid rgb(113, 117, 124);
+    border-radius: 8px;
+    padding: 0 15px;
+    flex: 1;
+  }
+  
+  .infoCustomer div {
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .infoCustomer div > p:nth-child(1) {
+    font-weight: bolder;
+  }
+  
+  .tablelegend{
+    padding: 2px 15px;
+    font-size: 1 em;
+  }
+  .diseñotabla {
+    padding: 2px 15px;
+    font-size: 0.9 em;
+  }
+  
+  .tblCotizaciones {
+    width: 100%;
+    border: 1px solid #6e84e7;
+    border-radius: 4px;
+  }
+  
+  .tblCotizaciones th {
+    background: #6e84e7;
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+  }
+  
+  .tblCotizaciones td {
+    padding: 10px;
+    border-right: 1px solid rgb(113, 117, 124);
+  }
+  
+  .description{
+    display: flex;
+    flex-direction: row;
+    padding: 0 15px;
+  }
+  .dvResPrices, .dvObservacion{
+    border: 1px solid rgb(113, 117, 124);
+
+   
+
+  }
+  .dvObservacion{
+    padding: 10px;
+    flex: 1;
+  }
+
+ .dvResPrices div{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(113, 117, 124);
+    align-items: center;
+    height: 3em;
+
+ }
+ .dvResPrices div>p{
+    display: flex;
+    align-items: center;
+    padding: 0px 5px;
+
+ }
+  .dvResPrices div>p:nth-child(1){
+    font-weight: bolder;
+    text-transform: uppercase;
+    background: #6e84e7;
+    width: 110px;
+    height: 100%;
+    color: white;
+  }
+
+  .dvResPrices div>p:nth-child(2){
+    width: 120px;
+  }
+
+  .textBold {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+
+  .tbItem{
+    width: 10%; 
+  }
+
+  .tbDesc{
+    width: 60%;
+  }
+
+  .tbCant{
+    width: 10%;
+  }
+
+  .tbPrice{
+    width: 10%;
+  }
+
+  .tbTotal{
+    width: 10%;
+  }
+
+
+
+  /* respp */
+  /* Estilos generales */
+body {
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos específicos para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .frameFact {
+      padding: 5px;
+  }
+
+  .boxinfo {
+      flex-direction: column;
+      padding: 10px 20px;
+  }
+
+  .infoSeller {
+      font-size: 14px;
+  }
+
+  .logofact {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto;
+  }
+
+  .infoQuot {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .dateQuot {
+      flex-direction: column;
+      padding: 5px;
+  }
+
+  .addrescity {
+      margin-left: 0;
+  }
+
+  .informational {
+      flex-direction: column;
+      padding: 5px;
+  }
+
+  .infoCustomer {
+      padding: 10px;
+  }
+
+  .tblCotizaciones th,
+  .tblCotizaciones td {
+      font-size: 0.9em;
+      padding: 5px;
+  }
+
+  .dvResPrices div {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 5px;
+  }
+
+  .dvResPrices div>p {
+      width: 100%;
+  }
+}
+
+/* Estilos específicos para pantallas medianas (tabletas) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .frameFact {
+      padding: 10px;
+  }
+
+  .boxinfo {
+      flex-direction: row;
+      padding: 15px 30px;
+  }
+
+  .infoSeller {
+      font-size: 15px;
+  }
+
+  .logofact {
+      width: 140px;
+      height: 140px;
+  }
+
+  .infoQuot {
+      width: 200px;
+  }
+
+  .dateQuot {
+      padding: 10px;
+  }
+
+  .addrescity {
+      margin-left: 30px;
+  }
+
+  .informational {
+      padding: 10px;
+  }
+
+  .infoCustomer {
+      padding: 15px;
+  }
+
+  .tblCotizaciones th,
+  .tblCotizaciones td {
+      font-size: 1em;
+      padding: 8px;
+  }
+
+  .dvResPrices div {
+      flex-direction: row;
+      align-items: center;
+  }
+
+  .dvResPrices div>p {
+      width: auto;
+      padding: 5px;
+  }
+}
