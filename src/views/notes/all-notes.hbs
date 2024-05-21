@@ -1,13 +1,23 @@
 <div>
     {{#each notes}}
-    <div style="background-color: aquamarine; heigth:100px;width:300px">
+    <div style="background-color: aquamarine; height:100px;width:300px;">
         <h4 class="titulo">
-            {{this.producto}} a
+            {{producto}} a
         </h4>
         <p>
             {{cantidad}}
         </p>
+        <p>
+            {{date}}
+        </p>
         <button style="background-color: red;">eliminar</button>
     </div>
+    {{else}}
+    <p>no hay tareas</p>
+    <h1>Agrega una tarea</h1>
+    <a href="/notes/add">crea una aquí</a>
     {{/each}}
 </div>
+
+<script src="/routers/notes.js"></script>
+
